@@ -1,0 +1,260 @@
+//variables
+$morado: #FF497B;
+$gris: #6C7474;
+// generales
+.uppercase{
+	text-transform: uppercase;
+}
+.letter-spacing{
+	letter-spacing: 4px;
+}
+.video-responsive {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+}
+.video-responsive iframe, .video-responsive object, .video-responsive embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+body,html{
+	font-family: 'helvetica',sans-serif;
+	overflow-x: hidden;
+}
+.bg{
+	&-morado{
+		background-color:$morado;
+	}
+	&-white{
+		background-color: white;
+	}
+}
+.color{
+	&-white{
+		color: white;
+	}
+	&-morado{
+		color:$morado;	
+	}
+	&-gray{
+		color:$gris;
+	}
+
+}
+//header 
+header{
+	padding: 20px; 
+}
+.logo{
+	max-width: 150px;
+}
+
+//datos
+.datos{
+	overflow: hidden;
+	h1{
+	    font-size: 1.8em;
+	    position: relative;
+	    z-index: 1;
+	    font-weight: 600;
+	    @media only screen and (min-width: 768px){
+	    	font-size: 3em;
+	    	display: inline-block;
+	    }
+	}
+	h2{ 
+		font-size: 50px;
+	    line-height: 50px;
+		font-weight: 600;
+	}
+	&-img{
+    	max-width: 250px;
+    	margin: -100px 0 -60px;
+    	width: 100%;
+    	display: none;
+    	@media only screen and (min-width: 768px){
+    		display: block;
+    	}
+	}
+	.precio{
+		position: relative;
+		flex-wrap: wrap;
+		display: inline-block;
+		max-width: 320px;
+		border-radius: 20px;
+		@media only screen and (min-width: 768px){
+			flex-wrap: nowrap;
+		}
+	}
+	.lugar{
+		letter-spacing: 4px;
+	}
+	.valor{
+		font-size: 30px;
+	}
+	h2{
+		margin-bottom: 0;
+	}
+	.title{
+		position: relative;
+		padding-bottom: 10px;
+		letter-spacing: 3px;
+		&:after{
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: 4px;
+			width: 100%;
+			background: white;
+
+		}
+	}
+}
+//descripcion
+
+.descripcion{
+	position: relative;
+	background-image: none;
+	@media only screen and (min-width: 768px){
+		background-image: url(img/title-sino.png), url(img/title-sino.png);
+		background-size:4%, 4%;
+		background-position: 5% 30%, 90% 30%; 
+		background-repeat: no-repeat; 
+    }
+
+	.title{
+		position: relative;
+		display: inline-block;
+		font-weight: bold;
+		font-size: 30px;
+		line-height: 30px;
+		span{
+			font-size:40px;
+		}
+		@media only screen and (min-width: 768px){
+			line-height: 60px;
+			font-size: 50px;
+			span{
+				font-size: 80px;
+			}
+		}
+	}
+	.cuadro{
+		max-width: 80%;
+		border: solid 4px white;
+		padding: 20px;
+	}
+}
+
+//sinopsis
+.sino-title{
+	position: relative;
+	h2{
+		padding: 0 20px;
+		background: white;
+		z-index: 1;
+		position: relative;
+		display: inline-block;
+	}	
+	&:before{
+		content: "";
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		height: 100%;
+		width: 100px;
+		background: white url(img/title-sino.png) no-repeat center center / contain;
+		transform: translateY(-50%);
+		z-index: 1;
+	}
+	&:after{
+		content: "";
+		display: none;
+		position: absolute;
+		top: 30%;
+		left: 0;
+		height: 1px;
+		width: 80%;
+		background: rgba($gris,0.5);
+		transform: translateY(-30%);
+		@media only screen and (min-width: 992px){
+			display: block;
+		}
+	}
+}
+.sinopsis{
+	background:url(img/banner_mobile.jpg) no-repeat center center / cover;
+	padding-bottom: 56%;
+	p{
+	    @media only screen and (max-width: 992px){
+		    display: block;
+		    background: rgba(255,255,255,0.8);
+		    padding: 50px;
+		    border-radius: 30px;
+		    text-align: center;
+		    margin-top: 40px;
+	    }
+	}
+	@media only screen and (min-width: 992px){
+		background: url(img/title-sino.png) no-repeat 90% 25% / 50px, url(img/sinop@2x.png) no-repeat center center / cover;
+	}
+}
+//tarjetas
+.tarjetas{
+	position: relative;
+	.tarjeta{
+		box-shadow: 0px 0px 20px 5px rgba(black,0.2);
+		border-radius: 4px;
+		padding: 40px 15px 20px;
+		margin-bottom: 20px;
+		@media only screen and (min-width: 768px){
+			margin: 0;
+
+		}
+		img{
+			margin-bottom: 20px;
+		}
+		.titulo{
+			padding: 20px 0;
+		}
+	}
+	.btn-tarjeta{
+		display: inline-block;
+		border-radius: 50px;
+		padding: 5px 30px;
+		color: white;
+		&:hover{
+			color: white;
+		}
+	}
+}
+footer{
+	background: url(img/footer-logo@2x.png) no-repeat right bottom / 640px;
+	min-height: 130px;
+	@media only screen and (min-width: 768px){
+		background: url(img/footer-logo@2x.png) no-repeat right bottom / contain;
+		min-height: 150px;
+	}
+}
+//video
+
+.video{
+	background: url(img/copo@2x.png) no-repeat 15px calc(0% - 20px) / 60px, url(img/copo@2x.png) no-repeat calc(100% + 40px) center / 80px;
+	position: relative;
+	box-shadow:0px 4px 0px 0px rgba(0,0,0,0.1);
+	@media only screen and (min-width: 768px){
+		background: url(img/copo@2x.png) no-repeat 15px 0% / 100px, url(img/copo@2x.png) no-repeat calc(100% + 75px) center / 150px;
+	}
+	.video-responsive{
+		position: relative;
+		z-index: 1;
+	}
+}

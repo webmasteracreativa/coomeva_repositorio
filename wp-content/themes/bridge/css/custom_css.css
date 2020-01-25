@@ -1,0 +1,26 @@
+
+
+.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-text {
+    text-align: center;
+}
+
+div.wpcf7 img.ajax-loader {
+    display: block;
+    margin: 0 auto;
+}
+
+.q_font_awsome_icon_square:hover {
+    border-color: #4d6aec !important;
+}
+.touch .projects_holder article span.text_holder {
+    display: block !important;
+    height: 100%  !important;
+    width: 100%  !important;
+    opacity: 1 !important;
+    visibility: hidden !important;
+}
+
+.touch .projects_holder article .image_holder:hover span.text_holder {
+    visibility: visible !important;
+}
+

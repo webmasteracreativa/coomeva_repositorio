@@ -1,0 +1,56 @@
+@media only screen and (max-width: 1000px){
+		.header_bottom {
+		background-color: #ffffff;
+	}
+				}
+@media only screen and (min-width: 480px) and (max-width: 768px){
+	
+	        section.parallax_section_holder{
+			height: auto !important;
+			min-height: 400px;
+		}
+		}
+@media only screen and (max-width: 768px){
+	
+			h2, h2 a {
+			font-size: 40px; 			line-height: 44px; 		    		}
+	
+	
+			h4, h4 a {
+			font-size: 21px; 			line-height: 29px; 		    		}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+@media only screen and (max-width: 600px) {
+	
+			h2, h2 a {
+			font-size: 27px; 			line-height: 34px; 		    		}
+	
+	
+			h4, h4 a {
+			font-size: 16px; 			line-height: 24px; 		    		}
+	
+	
+	
+	
+	
+	
+	
+	}
+@media only screen and (max-width: 480px){
+
+			section.parallax_section_holder {
+			height: auto !important;
+			min-height: 400px;
+		}
+	
+		
+	}

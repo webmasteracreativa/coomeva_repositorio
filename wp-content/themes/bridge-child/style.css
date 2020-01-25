@@ -1,0 +1,101 @@
+/*
+Theme Name: Bridge Child
+Theme URI: http://demo.qodeinteractive.com/bridge/
+Description: A child theme of Bridge Theme
+Author: Qode Interactive
+Author URI: http://www.qodethemes.com/
+Version: 1.0.0
+Template: bridge
+*/
+@import url("../bridge/style.css");
+
+#info-e .wpb_text_column h4 strong {
+    background-color: #217e52;
+    padding: 2px 5px;
+    color: white;
+    font-weight: 500;
+}
+
+/*--------------------------------------------------------------
+## Notebook
+--------------------------------------------------------------*/
+@media only screen and (max-width: 1280px) {
+  html {
+      font-size: 95%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+
+}
+/*--------------------------------------------------------------
+## Netbook
+--------------------------------------------------------------*/
+@media only screen and (max-width: 1024px) {
+  html {
+      font-size: 90%;
+  }
+}
+/*--------------------------------------------------------------
+## iPad
+--------------------------------------------------------------*/
+@media only screen and (max-width: 960px) {
+  html {
+      font-size: 85%;
+  }
+  .header_bottom {
+      background-color: #f3f3f3 !important;
+  }
+  .slider_content_inner.one_by_one {
+      max-width: 70%;
+  }
+  .carousel:not(.advanced_responsiveness) .carousel-inner h2.q_slide_title.large {
+      line-height: 17px !important;
+  }
+  .carousel:not(.advanced_responsiveness) .carousel-inner p {
+      line-height: 0em !important;
+  }
+  .carousel:not(.advanced_responsiveness) .carousel-inner p.q_slide_text span {
+      font-size: 0px;
+      line-height: 17px;
+  }
+  #bg * {
+      color: white;
+  }
+  .flavia h4 {
+      margin-bottom: 20px;
+      font-size: 17px;
+      line-height: 24px;
+  }
+}
+/*--------------------------------------------------------------
+## iPad
+--------------------------------------------------------------*/
+@media only screen and (max-width: 768px) {
+	html {
+		  font-size: 80%;
+	}
+  .carousel:not(.advanced_responsiveness) .carousel-inner .image {
+      background-position: 70% center;
+  }
+  #info-e .wpb_text_column h4 {
+      font-size: 21px;
+      line-height: 24px;
+      margin-bottom: 12px;
+  }
+  .carousel:not(.advanced_responsiveness) .carousel-inner .qbutton {
+      line-height: 40px !important;
+      height: 40px !important;
+  }
+  .bot {
+      padding-top: 20px !important;
+  }
+}
+/*--------------------------------------------------------------
+## iPad
+--------------------------------------------------------------*/
+@media only screen and (max-width: 480px) {
+  html {
+      font-size: 75%;
+  }
+}
